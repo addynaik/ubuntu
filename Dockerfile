@@ -5,8 +5,10 @@ RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
   apt-get update && \
   apt-get -y upgrade && \
-  apt-get install -y build-essential && \
-  apt-get install -y curl git && \
+  apt-get install -y build-essential \
+    curl \
+    language-pack-en \
+    git && \
   apt-get remove -y man && \
   rm -rf /var/lib/apt/lists/*
 
