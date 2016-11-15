@@ -8,6 +8,7 @@ RUN \
   apt-get install -y build-essential \
     curl \
     nano \
+    python \
     language-pack-en \
     git && \
   apt-get remove -y man && \
