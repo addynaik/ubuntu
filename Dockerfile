@@ -7,6 +7,7 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y build-essential \
     curl \
+    nano \
     language-pack-en \
     git && \
   apt-get remove -y man && \
