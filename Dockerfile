@@ -18,7 +18,7 @@ ENV HOME /home/ubuntu
 WORKDIR /home/ubuntu
 
 RUN git clone https://github.com/port80labs/dotfiles.git && \
-  cp dotfiles/.* . &&\
+  cp dotfiles/.* ./ || true &&\
   rm -rf dotfiles
 
 # Define default command.
